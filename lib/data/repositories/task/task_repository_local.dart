@@ -28,6 +28,6 @@ class TaskRepositoryLocal {
 
   /// Deletes a given [Task] entry fromthe database
   Future<void> deleteTask(Task task) async {
-    await _localDataService.deleteTask(task.id);
+    await _localDataService.deleteTask(task.id!);
   }
 }
